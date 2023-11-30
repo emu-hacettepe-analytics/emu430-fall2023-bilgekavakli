@@ -4,12 +4,112 @@ title: "Assignment 1"
 
 # Assignment 1
 
-```{r}
-1 + 1
-```
-
-My first assignment has two parts.
+My first assignment has three parts.
 
 ## (a)
 
+Using R to Analyze COVID-19 \| R Programming Project - (<https://www.youtube.com/watch?v=D_CNmYkGRUc>)
+
+In this video, he explained how to use the R programming language to perform statistical analysis on the COVID-19 (coronavirus) data set. This video is an R programming tutorial that shows us the basics of importing a dataset and performing data analysis. In the video, he first selected a data set about Covid-19 from the Kaggle website and downloaded it to the computer. Then import the downloaded dataset into R Studio. There are 1085 entries in the columns where we can see the gender, age, whether the infected person has recovered or died. Read data from the CSV file with the read.csv command and assign it to a data frame. For this analysis, he used the "Hmisc" package, which contains a wide range of functions that can be useful in tasks such as data processing, summarization, statistical analysis. ("install.packages("Hmisc")" and "library(Hmisc)"). In the video, he made analyzes such as the death rate, whether the dead were old or not, and whether gender was important. As a result of analysis of this dataset, we concluded that people who died from coronavirus were much older than people who did not die from coronavirus, and men had higher death rates than women.
+
 ## (b)
+
+1.Indexing
+
+In R, indexing starts from 1. The first element of a vector or the first row/column of a matrix is accessed with index 1.
+
+```{r}
+    x <- c(5:10)
+    first_element <- x[1]
+    #when we try it in python output is going to be 5 because indexing starts from 1.
+    first_element 
+
+```
+
+In Python, indexing starts from 0. The first element of a list or the first row/column of a NumPy array is accessed with index 0.
+
+```{Python}
+    x=list(range(5:10))
+    first_element = x[1]
+    #output is 6 because first index is 0 we should use x[0] for first element of the list in python.
+    
+    print(first_element) 
+
+```
+
+2- Syntax and Writing Style
+
+While the \<- assignment operator is generally used in R, = is used in Python. Also in Python, levels indentation is important for specifying block structures.
+
+```{r}
+grades <- c(100, 55, 30, 78, 69)
+avarage <- mean(grades)
+```
+
+```{python}
+grades = c(100, 55, 30, 78, 69)
+avarage = sum(grades) / len (grades)
+```
+
+3- Package and Library Ecosystem
+
+R generally has packages focused on statistical analysis and graphing, while Python has libraries used for a wide range of applications.
+
+Packages in R are generally managed through CRAN (Comprehensive R Archive Network) and users can install packages directly from the CRAN repository. R's package ecosystem generally includes a wide range of packages related to statistical analysis and graphics.
+
+```{r}
+# Install ggplot2 package
+install.packages("ggplot2")
+library(ggplot2)
+
+# create data
+veri <- data.frame(X = c(1, 2, 3, 4, 5), Y = c(10, 15, 7, 22, 12))
+
+# draw scatter plot using ggplot2
+ggplot(veri, aes(x = X, y = Y)) + geom_point()
+
+```
+
+Python's library ecosystem is quite extensive and covers a variety of use cases. There are libraries used in many fields such as data science, artificial intelligence, and web development. For example, popular libraries for data analysis include NumPy, Pandas, and Matplotlib.
+
+```{python}
+# Install NumPy and Matplotlib libraries
+import numpy as np
+import matplotlib.pyplot as plt
+
+# create data
+veri = np.array([[1, 10], [2, 15], [3, 7], [4, 22], [5, 12]])
+
+# Draw a scatter plot
+pltz.scatter(veri[:, 0], veri[:, 1])
+plt.xlabel('X')
+plt.ylabel('Y')
+plt.show()
+
+```
+
+## **(c)**
+
+```{r}
+install.packages("dslabs")  #If the "dslabs" package is not installed before, this line will download and install the package.
+
+library(dslabs)  #Installs the "dslabs" package and makes it ready for use.
+
+data("na_example") #Loads the "na_example" dataset from the "dslabs" package.
+
+cat("Original na_example dataset:\n")
+print(na_example)   #Prints the original "na_example" data set to the screen.
+
+cat("\nNumber of NAs in the original dataset: ", sum(is.na(na_example)), "\n")   #Prints the number of missing values (NA) in the original data set.
+
+a_example_no_na <- na_example  #Copies the original dataset.
+na_example_no_na[is.na(na_example_no_na)] <- 0   #Replaces missing values (NA) with zeros.
+
+cat("\nModified na_example dataset (NAs replaced with 0):\n")
+print(na_example_no_na) #Prints the data set with missing values replaced by zeros.
+
+cat("\nNumber of NAs in the modified dataset: ", sum(is.na(na_example_no_na)), "\n")    #Prints the number of missing values in the modified data set.
+
+```
+
+As a result of running this code, the original "na_example" data set is printed to the screen, followed by the data set in which the missing values are replaced with zeros. Finally, in both cases, the number of missing values is printed on the screen. If there are missing values in the original data set, this number will drop to zero as the missing values are replaced with zeros.
