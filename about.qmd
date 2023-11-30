@@ -5,26 +5,43 @@ sidebar: false
 
 # Education
 
--   B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
+-   B.S., Industrial Engineering, Hacettepe University, Turkey, 2018 - ongoing.
 
 # Work Experience
 
-## Employements
-
-1.  Firm xxx, position xx, year xxx
-
-2.  Firm yyy, position yyy, year yyy
-
 ## Internships
 
-1.  Firm aaa, position xx, year xxx
+1.  Roketsan Defense Industry, \[[https://www.roketsan.com.tr](https://www.roketsan.com.tr/tr)\] , Summer intern , year 2022
 
-2.  Firm bbb, position yyy, year yyy
+2.  5th main maintenance factory directorate , \[<https://www.msb.gov.tr/Ihale/IlanDetay/95d93712-29d8-49b4-9580-600e3229f938>\] , Summer intern , year 2022
 
 # Projects
 
-# Competencies
+1.  Sustonable, The Circular Design Surface \[<https://www.sustonable.com/es/>\] , Graduation Project (Supplier Selection) , 2023
+2.  Private gynecological diseases and maternity hospital , Graduation Project (Personnel Planning) , 2023
 
-R, Quarto, Git, Python
+# Skills
+
+-R ![](images/rstudio-02.svg){width="17"}
+
+-Quarto
+
+-Git ![](images/github-01.svg){width="17"}
+
+-Python ![](images/python.svg){width="17"}
+
+-Matlab ![](images/file-type-matlab.svg){width="17"}
+
+-Solidworks ![](images/solidworks.svg){width="20"}
+
+-Excel ![](images/file-type-excel.svg){width="17"}
+
+-MS Office ![](images/microsoft-office.svg){width="50" height="17"}
 
 # Hobbies
+
+Hiking
+
+Cooking
+
+Yoga
