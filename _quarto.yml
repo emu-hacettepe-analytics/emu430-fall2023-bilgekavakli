@@ -3,20 +3,20 @@ project:
   output-dir: docs
 
 website:
-  title: "[Bilge]'s Analytics Lab"
+  title: "Bilge's Analytics Lab"
   navbar:
     search: true
     left:
       - text: Home
         href: index.qmd
       - text: About Me
-        href: about.qmd
+        href: about.qmd 
       - text: My Posts
         href: posts.qmd
       - text: "EMU430 Coursework"
         menu:
           - text: Assignments
-            href: assignments.qmd
+            href: assignments.qmd 
           - text: Project
             href: project.qmd
             
@@ -44,8 +44,8 @@ format:
     toc: true
     toc-location: left
     theme: 
-      light: pulse 
-      dark: superhero
+      light: solarized
+      dark: lux
     css: styles.css
 
 
