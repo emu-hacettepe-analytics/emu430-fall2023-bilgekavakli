@@ -26,7 +26,13 @@ sidebar: false
 
 -Quarto
 
+<<<<<<< HEAD
 -Git ![](images/github-01.svg){width="17"} -Python ![](images/python.svg){width="17"}
+=======
+-Git ![](images/github-01.svg){width="17"}
+
+-Python ![](images/python.svg){width="17"}
+>>>>>>> 53953389bc616dba3019513b6fd368af9d641a00
 
 -Matlab ![](images/file-type-matlab.svg){width="17"}
 
